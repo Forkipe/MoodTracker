@@ -11,6 +11,10 @@
 		0C34E0CF2A6406CE0077EDEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0CE2A6406CE0077EDEA /* ContentView.swift */; };
 		0C34E0D12A6406D00077EDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C34E0D02A6406D00077EDEA /* Assets.xcassets */; };
 		0C34E0D42A6406D00077EDEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C34E0D32A6406D00077EDEA /* Preview Assets.xcassets */; };
+		0C34E0DD2A6406F90077EDEA /* MoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0DB2A6406F90077EDEA /* MoodModel.xcdatamodeld */; };
+		0C34E0DF2A6408090077EDEA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0DE2A6408090077EDEA /* DataController.swift */; };
+		0C34E0E52A640B4C0077EDEA /* AddMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */; };
+		0C34E0E72A640D090077EDEA /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0E62A640D090077EDEA /* TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0C34E0CE2A6406CE0077EDEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C34E0D02A6406D00077EDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C34E0D32A6406D00077EDEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C34E0DC2A6406F90077EDEA /* MoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodModel.xcdatamodel; sourceTree = "<group>"; };
+		0C34E0DE2A6408090077EDEA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodView.swift; sourceTree = "<group>"; };
+		0C34E0E62A640D090077EDEA /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				0C34E0CC2A6406CE0077EDEA /* MoodTrackerApp.swift */,
-				0C34E0CE2A6406CE0077EDEA /* ContentView.swift */,
+				0C34E0E12A640B160077EDEA /* Helpers */,
+				0C34E0E02A640B050077EDEA /* Views */,
+				0C34E0DA2A6406DE0077EDEA /* DataModel */,
 				0C34E0D02A6406D00077EDEA /* Assets.xcassets */,
 				0C34E0D22A6406D00077EDEA /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				0C34E0D32A6406D00077EDEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C34E0DA2A6406DE0077EDEA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C34E0DB2A6406F90077EDEA /* MoodModel.xcdatamodeld */,
+				0C34E0DE2A6408090077EDEA /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0C34E0E02A640B050077EDEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C34E0CE2A6406CE0077EDEA /* ContentView.swift */,
+				0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C34E0E12A640B160077EDEA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0C34E0E62A640D090077EDEA /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C34E0E52A640B4C0077EDEA /* AddMoodView.swift in Sources */,
 				0C34E0CF2A6406CE0077EDEA /* ContentView.swift in Sources */,
+				0C34E0DF2A6408090077EDEA /* DataController.swift in Sources */,
 				0C34E0CD2A6406CE0077EDEA /* MoodTrackerApp.swift in Sources */,
+				0C34E0DD2A6406F90077EDEA /* MoodModel.xcdatamodeld in Sources */,
+				0C34E0E72A640D090077EDEA /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0C34E0DB2A6406F90077EDEA /* MoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C34E0DC2A6406F90077EDEA /* MoodModel.xcdatamodel */,
+			);
+			currentVersion = 0C34E0DC2A6406F90077EDEA /* MoodModel.xcdatamodel */;
+			path = MoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0C34E0C12A6406CE0077EDEA /* Project object */;
 }
