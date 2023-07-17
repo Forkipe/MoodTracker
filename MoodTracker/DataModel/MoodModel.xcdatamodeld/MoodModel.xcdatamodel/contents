@@ -4,5 +4,6 @@
         <attribute name="date" optional="YES" attributeType="Date" defaultDateTimeInterval="679662660" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String" defaultValueString="OK"/>
+        <attribute name="points" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
 </model>

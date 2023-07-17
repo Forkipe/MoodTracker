@@ -25,16 +25,18 @@ class DataController: ObservableObject{
             print("Data is NOT saved :(")
         }
     }
-    func AddMood(name: String, context:NSManagedObjectContext) {
+    func AddMood(name: String, points:Double, context:NSManagedObjectContext) {
         let mood = Mood(context: context)
         mood.id = UUID()
         mood.date = Date()
         mood.name = name
+        mood.points = points
         
         save(context:context)
     }
-    func editMood(mood: Mood, name: String, context: NSManagedObjectContext) {
+    func editMood(mood: Mood, points: Double, name: String, context: NSManagedObjectContext) {
         mood.name = name
+        mood.points = points
         
         save(context: context)
     }

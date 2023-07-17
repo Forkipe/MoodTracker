@@ -15,6 +15,8 @@
 		0C34E0DF2A6408090077EDEA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0DE2A6408090077EDEA /* DataController.swift */; };
 		0C34E0E52A640B4C0077EDEA /* AddMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */; };
 		0C34E0E72A640D090077EDEA /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34E0E62A640D090077EDEA /* TimeFormatting.swift */; };
+		0CD39F902A65493300E3CA51 /* EditMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD39F8F2A65493300E3CA51 /* EditMoodView.swift */; };
+		0CD39F922A6568A300E3CA51 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD39F912A6568A300E3CA51 /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		0C34E0DE2A6408090077EDEA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodView.swift; sourceTree = "<group>"; };
 		0C34E0E62A640D090077EDEA /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		0CD39F8F2A65493300E3CA51 /* EditMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMoodView.swift; sourceTree = "<group>"; };
+		0CD39F912A6568A300E3CA51 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0C34E0CE2A6406CE0077EDEA /* ContentView.swift */,
+				0CD39F912A6568A300E3CA51 /* ListItemView.swift */,
+				0CD39F8F2A65493300E3CA51 /* EditMoodView.swift */,
 				0C34E0E42A640B4C0077EDEA /* AddMoodView.swift */,
 			);
 			path = Views;
@@ -174,10 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C34E0E52A640B4C0077EDEA /* AddMoodView.swift in Sources */,
+				0CD39F922A6568A300E3CA51 /* ListItemView.swift in Sources */,
 				0C34E0CF2A6406CE0077EDEA /* ContentView.swift in Sources */,
 				0C34E0DF2A6408090077EDEA /* DataController.swift in Sources */,
 				0C34E0CD2A6406CE0077EDEA /* MoodTrackerApp.swift in Sources */,
 				0C34E0DD2A6406F90077EDEA /* MoodModel.xcdatamodeld in Sources */,
+				0CD39F902A65493300E3CA51 /* EditMoodView.swift in Sources */,
 				0C34E0E72A640D090077EDEA /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +225,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -277,6 +286,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -304,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTracker/Preview Content\"";
@@ -333,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTracker/Preview Content\"";
